@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Details</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+<!-- 🔥 VIDEO -->
+<div class="video-bg">
+  <video autoplay muted loop>
+    <source src="Media/Home/v2.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- FORM -->
+<div class="form-container">
+  <form onsubmit="return validateForm()">
+
+    <h2>Booking Details</h2>
+
+    <input type="text" placeholder="Enter Your Name">
+    <input type="number" placeholder="Enter Your No">
+    <input type="date">
+    <input type="text" placeholder="Enter Event Place">
+
+    <select>
+      <option>Select Package</option>
+      <option>Basic Package
+        [Decoration + Music, Photoshoot & Surprize Gift (Optionly)]
+      </option>
+      <option><b>Standard Package</b>
+        [Decoration + Music,
+        Food [Veg or Non-veg (Customized)],
+        Photoshoot
+        Cake Cut
+        Mackup
+        Surprize Gift (Optionly)]
+      </option>
+      <option>Premium Package
+        Decoration + Music
+        Food [Veg or Non-veg (Customized)]
+        Photoshoot
+        Cake Cut
+        Mackup
+        Dj Party
+        Surprize Gift (Optionly)
+      </option>
+      </select>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
+
+<script src="Js/Script.js"></script>
+
+</body>
+</html>

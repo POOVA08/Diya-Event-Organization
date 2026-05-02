@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <h1>Our Services</h1>
+
+    <!-- LIGHT -->
+    <div class="section">
+        <h2>💡 Light Decorations</h2>
+        <div class="gallery">
+            <img src="Media/Services/Lights/1.png">
+            <img src="Media/Services/Lights/2.png">
+            <img src="Media/Services/Lights/3.png">
+            <img src="Media/Services/Lights/4.png">
+            <img src="Media/Services/Lights/5.png">
+            <img src="Media/Services/Lights/6.jpg">
+        </div>
+    </div>
+
+    <!-- DJ -->
+    <div class="section">
+        <h2>🎶 DJ Party</h2>
+        <video controls><source src="Media/Services/DJ/1.mp4"></video>
+        <video controls><source src="Media/Services/DJ/2.mp4"></video>
+    </div>
+
+    <!-- MAKEUP -->
+    <div class="section">
+        <h2>💄 Makeup</h2>
+        <div class="gallery">
+            <img src="Media/Services/Mackup/1.png">
+            <img src="Media/Services/Mackup/3.png">
+            <img src="Media/Services/Mackup/4.jpg">
+            <img src="Media/Services/Mackup/5.jpg">
+        </div>
+    </div>
+
+    <!-- CAKE -->
+    <div class="section">
+        <h2>🍰 Cake Cutting</h2>
+        <div class="gallery">
+            <img src="Media/Services/Cake/1.png">
+            <img src="Media/Services/Cake/2.png">
+            <img src="Media/Services/Cake/3.png">
+            <img src="Media/Services/Cake/4.png">
+        </div>
+    </div>
+
+    <!-- GIFTS -->
+    <div class="section">
+        <h2>🎁 Surprise Gifts</h2>
+        <div class="gallery">
+            <img src="Media/Services/Gift/1.png">
+            <img src="Media/Services/Gift/2.png">
+            <img src="Media/Services/Gift/3.png">
+        </div>
+    </div>
+
+    <!-- DANCERS -->
+    <div class="section">
+        <h2>💃 Dancers</h2>
+        <div class="gallery">
+            <img src="Media/Services/Dancers/1.png">
+            <img src="Media/Services/Dancers/2.png">
+            <img src="Media/Services/Dancers/3.png">
+            <img src="Media/Services/Dancers/5.png">
+            <img src="Media/Services/Dancers/6.png">
+        </div>
+    </div>
+
+    <!-- PHOTOSHOOT (NEW) -->
+    <div class="section">
+        <h2>📸 Photoshoots</h2>
+        <p>Capture your special moments beautifully.</p>
+
+        <div class="gallery">
+            <img src="Media/Services/Photoshoot/B'day.png">
+            <img src="Media/Services/Photoshoot/Babyshower.png">
+            <img src="Media/Services/Photoshoot/Marriage.png">
+            <img src="Media/Services/Photoshoot/Party.png">
+            <img src="Media/Services/Photoshoot/Puberty.png">
+        </div>
+    </div>
+
+    <!-- FOOD -->
+    <div class="section">
+        <h2>🍛 Food Service</h2>
+        <div class="gallery">
+            <img src="Media/Services/Food/1.png">
+            <img src="Media/Services/Food/2.png">
+            <img src="Media/Services/Food/3.png">
+            <img src="Media/Services/Food/4.png">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔥 Background Video -->
+<div class="video-bg">
+  <video autoplay muted loop>
+    <source src="Media/Home/v1.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- Heading -->
+<div class="heading">
+  <h1>Event Cards</h1>
+  <p>Each card highlights Event Name, Date, Time & Description</p>
+</div>
+
+<!-- Cards Container -->
+<div class="container">
+
+  <!-- CARD 1 -->
+  <div class="card">
+    <img src="Media/Services/Photoshoot/B'day.png">
+    <h3>Diya's Birthday</h3>
+    <p>Date: 26 Aug 2025</p>
+    <p>Time: 6:00 PM</p>
+    <p>Place: Grace Party Hall</p>
+    <span>Fun, Cake, Music</span>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card">
+    <img src="Media/Fns/Baby.png">
+    <h3>Aadhi & Bhuvana</h3>
+    <p>Date: 02 July 2025</p>
+    <p>Time: 9:00 AM</p>
+    <p>Place: Grace Party Hall</p>
+    <span>Memories, Joy</span>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card">
+    <img src="Media/Fns/Married.png">
+    <h3>Wedding Event</h3>
+    <p>Date: 03 April 2025</p>
+    <p>Time: 7:30 AM</p>
+    <p>Place: Grace Party Hall</p>
+    <span>Love, Celebration</span>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card">
+    <img src="Media/Fns/Meets.png">
+    <h3>Monthly Meeting</h3>
+    <p>Date: 13 Sep 2025</p>
+    <p>Time: 11:00 AM</p>
+    <p>Place: Conference Hall</p>
+    <span>Planning, Growth</span>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="card">
+    <img src="Media/Fns/Party.png">
+    <h3>Success Party</h3>
+    <p>Date: 23 Jun 2025</p>
+    <p>Time: 6:00 PM</p>
+    <p>Place: Grace Party Hall</p>
+    <span>Celebration</span>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="card">
+    <img src="Media/Fns/Puberty.png">
+    <h3>Puberty Ceremony</h3>
+    <p>Date: 23 Oct 2025</p>
+    <p>Time: 6:00 PM</p>
+    <p>Place: Grace Party Hall</p>
+    <span>Tradition, Blessings</span>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Details</title>
+ <link hrel="stylesheet" href="CSS/Style.css">
+ </head>
+ <body>
+   <div class="video-bg">
+    <video autoplay muted loop >
+    <source src="Media/Home/v2.mp4" type="video/mp4">
+    </video>
+   <form onsubmit="return validateForm">
+    <h2>Booking Details</h2>
+    <input type="text" placeholder="Enter Your Name">
+    <input type="number" placeholder="Enter Your No">
+    <input type="date" placeholder="Enter Event Date">
+    <input type="text" placeholder="Enter Event Place">
+    <select>
+      <option>Select Package</option>
+      <option>Basic Package
+        [Decoration + Music, Photoshoot & Surprize Gift (Optionly)]
+      </option>
+      <option><b>Standard Package</b>
+        [Decoration + Music,
+        Food [Veg or Non-veg (Customized)],
+        Photoshoot
+        Cake Cut
+        Mackup
+        Surprize Gift (Optionly)]
+      </option>
+      <option>Premium Package
+        Decoration + Music
+        Food [Veg or Non-veg (Customized)]
+        Photoshoot
+        Cake Cut
+        Mackup
+        Dj Party
+        Surprize Gift (Optionly)
+      </option>
+      </select>
+      <button type="submit">Sumit</button>
+    </form>
+    <script src="Js/Script.js"></script>
+  </body>
+</html>
