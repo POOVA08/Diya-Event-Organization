@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Prize's</title>
+   <style>
+      *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    overflow:hidden;
+}
+
+/* VIDEO BACKGROUND */
+.video-bg{
+    position:relative;
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* VIDEO */
+.video-bg video{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    z-index:-2;
+}
+
+/* DARK OVERLAY */
+.video-bg::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.25);
+    z-index:-1;
+}
+
+/* CONTAINER */
+.container{
+    text-align:center;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(8px);
+
+    padding:30px;
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* TITLE */
+.container h2{
+    color:#FFD700;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+/* TABLE */
+table{
+    border-collapse:collapse;
+
+    background:rgba(0,0,0,0.35);
+    color:white;
+
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* TABLE HEAD */
+th{
+    background:rgba(255,255,255,0.15);
+    color:#ffd700;
+    font-size:20px;
+    backdrop-filter: blur(5px);
+}
+
+/* TABLE CELLS */
+th,td{
+    padding:15px 25px;
+    border:1px solid rgba(255,255,255,0.3);
+}
+
+/* ROW HOVER */
+tr:hover{
+    background:rgba(255,255,255,0.1);
+}
+
+/* BUTTON */
+.button{
+    margin-top:25px;
+}
+
+.button a{
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:linear-gradient(to right,#ff1493,#8e2de2);
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:0.3s;
+}
+
+.button a:hover{
+    transform:scale(1.05);
+}
+   </style>
+  </head>
+  <body>
+   <div class="video-bg">
+     <video autoplay muted loop >
+     <source src="../Media/Home/v5.mp4" type="video/mp4">
+     </video>
+    <div class="container">
+    <h2 style="color: azure;">Prizing Details</h2>
+     <table border="2">
+     <thead>
+      <th>Services</th>
+      <th>Prize's</th>
+     </thead>
+     <tbody>
+     <tr>
+      <td>Lights & Music's</td>
+      <td>30k to 40k</td>
+     </tr>
+     <tr>
+      <td>Cake Cutting</td>
+      <td>1000 to 2000</td>
+    </tr>
+    <tr>
+      <td>Surprize Gift</td>
+      <td>5k to 7k</td>
+    </tr>
+    <tr>
+      <td>Makeup</td>
+      <td>10k (Starting) - Customized</td>
+    </tr>
+    <tr>
+      <td>Dj Party</td>
+      <td>30k</td>
+    </tr>
+    <tr>
+      <td>Dancer's</td>
+      <td>25k to 27k</td>
+    </tr>
+    <tr>
+      <td>Food</td>
+      <td>12k for Veg (Starting) - Customized <br>
+          22k for Non-Veg (Starting) - Customized</td>
+    </tr>
+    <tr>
+      <td>Photoshoot</td>
+      <td>20k to 26k</td>
+    </tr>
+    </tbody>
+    </table>
+    <div class="button"><a href="../Booking.html">
+      <b>Booking Your Event</b></a></div>
+    </div></div></div>
+  </body>
+ </html>

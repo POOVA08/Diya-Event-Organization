@@ -2,21 +2,187 @@
 <html>
 <head>
   <title>Details</title>
-  <link rel="stylesheet" href="CSS/Style.css">
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+  overflow: hidden;
+}
+/* VIDEO BACKGROUND */
+.video-bg{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    z-index:-1;
+}
+
+/* VIDEO */
+.video-bg video{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* DARK OVERLAY */
+.video-bg::after{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.35);
+}
+
+/* FORM CONTAINER */
+.form-container{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    z-index:2;
+}
+
+/* FORM */
+form{
+    width:380px;
+
+    padding:35px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* HEADING */
+form h2{
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#FFD700;
+
+    font-size:32px;
+
+    text-shadow:0 0 10px black;
+}
+
+/* INPUTS */
+input,select{
+    width:100%;
+
+    margin:10px 0;
+
+    padding:12px;
+
+    border:none;
+    outline:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.15);
+
+    color:white;
+
+    font-size:15px;
+}
+
+/* PLACEHOLDER */
+input::placeholder{
+    color:#eee;
+}
+
+/* SELECT OPTIONS */
+select option{
+    color:black;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+
+    padding:12px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:linear-gradient(to right,#ff1493,#8e2de2);
+
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover{
+    transform:scale(1.05);
+}
+  </style>
 </head>
 
 <body>
 
 <!-- 🔥 VIDEO -->
 <div class="video-bg">
-  <video autoplay muted loop>
-    <source src="Media/Home/v2.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline>
+    <source src="./Media/Home/v2.mp4" type="video/mp4">
   </video>
 </div>
 
 <!-- FORM -->
-<div class="form-container">
-  <form onsubmit="return validateForm()">
+<div class="form-container"
+ style="min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ z-index: 2;">
+  
+  <form onsubmit="return validateForm()"
+  style="width: 320px;
+  background: rgba(0,0,0,0.7);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;">
 
     <h2>Booking Details</h2>
 
@@ -54,7 +220,7 @@
   </form>
 </div>
 
-<script src="Js/Script.js"></script>
+<script src="../Js/Script.js"></script>
 
 </body>
 </html>

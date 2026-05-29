@@ -2,18 +2,134 @@
 <html>
  <head>
   <title>Contact</title>
- <link rel="stylesheet" href="CSS/Style.css">
+ <style>
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+/* BODY */
+body{
+    overflow:hidden;
+}
+
+/* VIDEO BACKGROUND */
+.video-bg{
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* VIDEO */
+.video-bg video{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+}
+
+/* DARK OVERLAY */
+.video-bg::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.4);
+
+    z-index:-1;
+}
+
+/* CARD */
+.card{
+    width:380px;
+    position: relative;
+    padding:35px;
+    overflow:hidden ;
+    background:rgba(255,255,255,0.08);
+    display: flex;
+    backdrop-filter:blur(10px);
+    justify-content: center;
+    border-radius:20px;
+    align-items: center;
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.card-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.card-content{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+/* HEADING */
+.card h2{
+    margin:18px 0;
+
+    font-size:22px;
+
+    color:#FFD700;
+
+    text-shadow:0 0 10px black;
+}
+.card:hover{
+  transform: translateY(-10px)
+  scale(1.03);
+ }
+
+</style>
+
  </head>
  <body>
   <div class="video-bg">
-    <video autoplay muted loop >
-    <source src="Media\Home\Home.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline>
+      <source src="./Media/Home/Home.mp4" type="video/mp4">
     </video>
     <div class="card">
-      <h2>Mobile Number : 6369389570</h2>
-      <h2>Mail Id : Diyaevent02@gmail.com</h2>
-      <h2>Location : Ariyalur,TamilNadu</h2>
-      <h2>Working Hour's : 9:00 AM to 8:00 PM</h2>
-    </div></div>
+    <video autoplay muted loop playsinline class="card-video">
+    <source src="./Media/Home/Home.mp4" type="video/mp4">
+    </video>
+    <div class="card-content">
+      <h2>📞 Mobile Number : 6369389570</h2>
+      <h2>📧 Mail Id : Diyaevent02@gmail.com</h2>
+      <h2>📍 Location : Ariyalur,TamilNadu</h2>
+      <h2>⏰ Working Hour's : 9:00 AM to 9:00 PM</h2>
+    </div>
+  </div>
+</div>
  </body>
 </html>
